@@ -130,7 +130,7 @@ background-color: none;
 
 .numberOfBoxes{
     font-size: 2.125rem;
-    
+    text-align: center;
 }
 
 
@@ -301,7 +301,7 @@ li:hover{
 
 
 .cargoBays{
-    width: 100%;
+    width: 90%;
     font-size: 1.45rem;
 
     
