@@ -130,7 +130,7 @@ background-color: none;
 
 .numberOfBoxes{
     font-size: 2.125rem;
-    text-align: center;
+    
 }
 
 
@@ -211,12 +211,13 @@ li:hover{
     transition: 0.4s;
 }
 
+.hamburger:hover span{
+    background-color:   white;
+}
 
 .hamburger:hover span:nth-child(2){
     transform: translateX(10px);
-    transform: translateX(10px);
-    transform: translateX(10px);
-    background-color: purple;
+    background-color: white;
 }
 
 
@@ -311,6 +312,7 @@ li:hover{
 .numberOfBoxes{
     width: 90%;
     margin-top: 50px;
+    text-align: center;
     
 }
 
@@ -359,10 +361,9 @@ li:hover{
 
 
 .hamburger:hover span:nth-child(2){
-    -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
-    background-color: purple;
+
+    transform: translateX(0px);
+    background-color: white;
 }
 
 
