@@ -107,7 +107,7 @@ background-color: none;
     font-size: 1.5rem;
     margin-top: 30px;
     color: #979797;
-    
+   
 }
 
 
@@ -124,11 +124,13 @@ background-color: none;
     margin-top: 30px;
     font-size: 2.125rem;
     color: #979797;
+    
 }
 
 
 .numberOfBoxes{
     font-size: 2.125rem;
+    
 }
 
 
@@ -299,14 +301,15 @@ li:hover{
 
 
 .cargoBays{
-    width: 90%;
+    width: 100%;
     font-size: 1.45rem;
+
     
 }
 
 
 .numberOfBoxes{
-    width: 10%;
+    width: 90%;
     margin-top: 50px;
     
 }

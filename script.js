@@ -1,17 +1,26 @@
-const bodyPart = document.querySelector("#mainBox");
-const compList = document.querySelector(".listLeftContainer");
-const list = document.getElementById("lst");
-const shipList = list.querySelectorAll("li");
-const fullInfo = document.querySelector("#cargoContainer");
-const companyName = document.getElementById("companyName");
-const email = document.getElementById("email");
-const numOfItems = document.getElementById("numInput");
-const box = document.querySelector(".numberOfBoxes");
-const searchBar = document.querySelector(".searchBar")
+// const bodyPart = document.querySelector("#mainBox");
+// const compList = document.querySelector(".listLeftContainer");
+// const list = document.getElementById("lst");
+// const shipList = list.querySelectorAll("li");
+// const fullInfo = document.querySelector(".cargoContainer");
+// const companyName = document.getElementById("companyName");
+// const email = document.getElementById("email");
+// const numOfItems = document.getElementById("numInput");
+// const box = document.querySelector(".numberOfBoxes");
+// const searchBar = document.querySelector(".searchBar");
+
+
+
+import {compList, list, shipList, fullInfo, companyName, email, numOfItems, box , searchBar} from './helper.js'
 const hamburger = document.querySelector('.hamburger');
 
-let compNamesList = [];
 
+
+
+
+
+let compNamesList = [];
+let orderBoxes;
 
 
 
@@ -38,7 +47,7 @@ function fetchedData() {
 
 async function init() {                                                        
   const compInfos = await fetchedData();
-  let orderBoxes;
+  
   compNamesList = compInfos.map((item)=> {
     console.log(item)
   const compNamesItem = document.createElement('li')
@@ -89,7 +98,7 @@ async function searchEngine(){
       if(name.includes(searchTerm)){
         companyName.textContent = element.name;
         email.textContent = element.email;
-       numOfItems.value = element.boxes;
+        numOfItems.value = element.boxes;
           if(numOfItems.value){
            let numsArray = element.boxes.split(',');
           
