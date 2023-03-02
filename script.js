@@ -49,7 +49,6 @@ async function init() {
   const compInfos = await fetchedData();
   
   compNamesList = compInfos.map((item)=> {
-    console.log(item)
   const compNamesItem = document.createElement('li')
   compNamesItem.textContent = item.name;
   compNamesItem.addEventListener('click', () =>  {
